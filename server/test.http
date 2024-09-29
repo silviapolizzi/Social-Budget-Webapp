@@ -1,0 +1,88 @@
+### GET PHASES
+GET http://localhost:3001/api/phases
+
+### POST PHASES
+POST http://localhost:3001/api/phases
+Content-Type: application/json
+
+{
+    "phase": 0
+}
+
+### GET BUDGET
+GET http://localhost:3001/api/budget
+
+### POST BUDGET
+POST http://localhost:3001/api/budget
+Content-Type: application/json
+
+{
+    "budget": 100
+}
+
+### GET PROPOSALS
+GET http://localhost:3001/api/proposals/all
+
+### GET USER PROPOSALS
+GET http://localhost:3001/api/proposals
+
+### POST PROPOSALS
+POST http://localhost:3001/api/proposals
+Content-Type: application/json
+
+{
+    "description": "Test proposal",
+    "cost": 10
+}
+
+
+### DELETE PROPOSALS
+DELETE http://localhost:3001/api/proposals/:proposalId
+
+### GET PREFERENCES
+GET http://localhost:3001/api/preferences
+
+### POST PREFERENCES
+POST http://localhost:3001/api/preferences
+Content-Type: application/json
+
+{
+    "userId": "silviap",
+    "proposalId": "3",
+    "score": 1
+}
+
+### DELETE PREFERENCES
+DELETE http://localhost:3001/api/preferences/3
+
+### Login
+POST http://localhost:3001/api/sessions
+Content-Type: application/json
+
+{
+    "username": "adminapp@gmail.com",
+    "password": "admin123" 
+}
+
+### Login
+POST http://localhost:3001/api/sessions
+Content-Type: application/json  
+
+{
+    "username": "silviapolizzi@gmail.com",
+    "password": "silvia123"
+}
+
+### Logout
+POST http://localhost:3001/api/logout
+
+
+### RESET DATABASE
+DELETE http://localhost:3001/api/reset
+Content-Type: application/json
+
+{
+    "username": "adminapp@gmail.com",
+    "password": "admin123" 
+}
+
